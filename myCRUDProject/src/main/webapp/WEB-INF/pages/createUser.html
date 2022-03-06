@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Set user's feature</title>
+</head>
+<body>
+
+<form th:method="POST" th:action="@{/add}" th:object="${user}">
+    <label for="name">First Name: </label>
+    <input type="text" th:field="*{firstName}" id="name"/>
+    <label for="surName">Last Name: </label>
+    <input type="text" th:field="*{lastName}" id="surName"/>
+    <br/>
+    <input type="submit" value="Submit"/>
+</form>
+
+</body>
+</html>

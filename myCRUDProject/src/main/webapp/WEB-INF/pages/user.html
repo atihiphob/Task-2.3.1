@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+</head>
+<body>
+<!--/*@thymesVar id="user" type="web.model.User"*/-->
+<div>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>LastName</th>
+        </tr>
+
+        <tr>
+            <td th:text="${user.getId()}">Id</td>
+            <td th:text="${user.getFirstName()}">Имя</td>
+            <td th:text="${user.getLastName()}">Surname</td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
